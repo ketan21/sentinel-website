@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Sentinel Relay</title>
+  <defs>
+    <linearGradient id="g" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7a45"/>
+      <stop offset="0.55" stop-color="#ffb486"/>
+      <stop offset="1" stop-color="#fff1e7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0b1419"/>
+  <path d="M20 18h10c9.941 0 18 8.059 18 18s-8.059 18-18 18H20z" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 32h18" stroke="#17847d" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="44" cy="32" r="4" fill="#17847d"/>
+</svg>

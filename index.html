@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Relay | Secure WhatsApp Agent Gateway</title>
+    <meta name="description" content="Sentinel Relay is a security-first WhatsApp agent gateway with privacy modes, durable memory, recurring reminders, background jobs, and tamper-evident audit logging.">
+    <meta name="theme-color" content="#0b1419">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://sentinelrelay.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sentinel Relay">
+    <meta property="og:title" content="Sentinel Relay | Secure WhatsApp Agent Gateway">
+    <meta property="og:description" content="WhatsApp automation that behaves like infrastructure, with policy gates, durable memory, recurring reminders, and proof-grade audit trails.">
+    <meta property="og:url" content="https://sentinelrelay.com/">
+    <meta property="og:image" content="https://sentinelrelay.com/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sentinel Relay | Secure WhatsApp Agent Gateway">
+    <meta name="twitter:description" content="A policy-first relay for governed WhatsApp automation.">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Sentinel Relay",
+            "url": "https://sentinelrelay.com/",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Linux, macOS, Docker",
+            "description": "Security-first WhatsApp agent gateway with privacy modes, durable memory, recurring reminders, background jobs, and tamper-evident audit logging."
+        }
+    </script>
+</head>
+<body>
+    <div class="hero-shell">
+        <header class="site-header">
+            <a class="brand" href="#top" aria-label="Sentinel Relay home">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-wordmark">Sentinel Relay</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#modes">Modes</a>
+                <a href="#capabilities">Capabilities</a>
+                <a href="#workflow">Workflow</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Policy-first WhatsApp agent gateway</p>
+                    <h1>WhatsApp automation that behaves like infrastructure.</h1>
+                    <p class="lede">
+                        Sentinel Relay sits between inbound messages and agent execution with privacy modes,
+                        provider and tool allowlists, durable memory, recurring reminders, background jobs,
+                        and a tamper-evident audit chain.
+                    </p>
+                    <div class="cta-row">
+                        <a class="button button-primary" href="#capabilities">Explore the relay</a>
+                        <a class="button button-secondary" href="#workflow">View the workflow</a>
+                    </div>
+                    <ul class="hero-signals" aria-label="Key product attributes">
+                        <li>Meta Cloud API + QR sidecar</li>
+                        <li>Memory + reminders + background jobs</li>
+                        <li>Policy gates + audit proof</li>
+                    </ul>
+                    <p class="sr-only">Diagram showing Sentinel Relay as a central hub processing inbound WhatsApp messages through policy gates, tool execution, provider calls, and durable memory.</p>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="relay-stage" data-tilt>
+                        <div class="stage-grid"></div>
+                        <div class="orbit orbit-outer"></div>
+                        <div class="orbit orbit-inner"></div>
+                        <div class="beam beam-inbound"></div>
+                        <div class="beam beam-outbound"></div>
+                        <div class="relay-core">
+                            <span>Sentinel<br>Relay</span>
+                        </div>
+                        <div class="stage-label stage-label-top">policy gate</div>
+                        <div class="stage-label stage-label-right">audit chain</div>
+                        <div class="stage-label stage-label-bottom">durable memory</div>
+                        <div class="stage-label stage-label-left">background jobs</div>
+                        <div class="signal-tag signal-tag-inbound">inbound whatsapp</div>
+                        <div class="signal-tag signal-tag-route">orchestrator route</div>
+                        <div class="signal-tag signal-tag-tools">tool execution</div>
+                        <div class="signal-tag signal-tag-provider">provider call</div>
+                        <div class="signal-pulse signal-pulse-a"></div>
+                        <div class="signal-pulse signal-pulse-b"></div>
+                        <div class="stage-footer">
+                            <span>privacy modes</span>
+                            <span>reminder scheduler</span>
+                            <span>operator control surface</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proof-strip" aria-label="Product highlights">
+                <p>Rust runtime</p>
+                <p>Hash-chained audit logging</p>
+                <p>Sender-scoped sessions</p>
+                <p>Hybrid memory retrieval</p>
+                <p>Background agent queue</p>
+                <p>Control center API</p>
+            </section>
+
+            <section class="section modes" id="modes" data-reveal>
+                <div class="section-heading">
+                    <p class="eyebrow">Adapter surface</p>
+                    <h2>One relay, two ways to reach WhatsApp.</h2>
+                </div>
+                <div class="mode-band">
+                    <article class="mode-lane">
+                        <p class="mode-token">cloud_api</p>
+                        <h3>Use the official Meta webhook path when the standard integration surface is the requirement.</h3>
+                        <p>The same relay still enforces policy, tool exposure, reminders, memory, and outbound governance after the message lands.</p>
+                    </article>
+                    <article class="mode-lane">
+                        <p class="mode-token">qr_sidecar</p>
+                        <h3>Use linked-device QR login when you need a practical local bridge without rebuilding the orchestration layer.</h3>
+                        <p>QR status, outbound pull, and sidecar authentication stay explicit while the rest of the runtime remains shared.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section capabilities" id="capabilities">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Governed automation</p>
+                    <h2>Built for teams that need control before convenience.</h2>
+                </div>
+
+                <article class="capability capability-policy" data-reveal>
+                    <div class="capability-copy">
+                        <p class="capability-index">01</p>
+                        <h3>Protect the boundary around every tool and provider call.</h3>
+                        <p>
+                            Sentinel Relay keeps privacy modes, allowlists, signature verification, replay checks,
+                            and structured denials inside the runtime instead of hoping prompt text does the job.
+                        </p>
+                    </div>
+                    <div class="capability-visual policy-visual" aria-hidden="true">
+                        <span>local_only</span>
+                        <span>redacted_remote</span>
+                        <span>full_remote</span>
+                        <span>allowlisted skills</span>
+                        <span>provider timeouts</span>
+                        <span>token-authenticated bridge</span>
+                    </div>
+                </article>
+
+                <article class="capability capability-memory" data-reveal>
+                    <div class="capability-copy">
+                        <p class="capability-index">02</p>
+                        <h3>Keep long-lived conversations operational, not fragile.</h3>
+                        <p>
+                            Durable memory, recurring reminders, one-shot reminders, and background sub-agents let
+                            WhatsApp workflows continue after the first response without losing context.
+                        </p>
+                    </div>
+                    <div class="capability-visual memory-visual" aria-hidden="true">
+                        <div><span>capture</span><strong>always-on memory</strong></div>
+                        <div><span>organize</span><strong>nightly promotion + dedupe</strong></div>
+                        <div><span>recall</span><strong>hybrid search and recency blending</strong></div>
+                    </div>
+                </article>
+
+                <article class="capability capability-ops" data-reveal>
+                    <div class="capability-copy">
+                        <p class="capability-index">03</p>
+                        <h3>Leave an operator-grade trail behind every action.</h3>
+                        <p>
+                            The control center, runtime diagnostics, proposal workflows, and append-only audit chain
+                            give operators a clean browser surface without turning the public site into the control plane.
+                        </p>
+                    </div>
+                    <div class="capability-visual ops-visual" aria-hidden="true">
+                        <div class="ops-line"><span>overview</span><strong>/api/control-center/overview</strong></div>
+                        <div class="ops-line"><span>config</span><strong>/api/control-center/config</strong></div>
+                        <div class="ops-line"><span>runtime</span><strong>/api/control-center/runtime</strong></div>
+                        <div class="ops-line"><span>proposals</span><strong>validated, restart-aware changes</strong></div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section workflow" id="workflow">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Message lifecycle</p>
+                    <h2>From inbound text to governed action.</h2>
+                </div>
+                <ol class="flow-rail" data-reveal>
+                    <li>
+                        <span class="flow-step">01</span>
+                        <div>
+                            <h3>Receive</h3>
+                            <p>Cloud API or QR sidecar hands the message into one consistent gateway.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="flow-step">02</span>
+                        <div>
+                            <h3>Normalize</h3>
+                            <p>Sender, replay, and session state are resolved before any model or tool use starts.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="flow-step">03</span>
+                        <div>
+                            <h3>Route</h3>
+                            <p>Conversation, retrieval, tool, or background-task mode is selected for the turn.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="flow-step">04</span>
+                        <div>
+                            <h3>Execute</h3>
+                            <p>Provider calls and skills only run when policy, provider allowlists, and skill allowlists all align.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="flow-step">05</span>
+                        <div>
+                            <h3>Persist</h3>
+                            <p>Memory capture, reminders, and audit events keep the result durable enough for real operations.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="flow-step">06</span>
+                        <div>
+                            <h3>Operate</h3>
+                            <p>Operators can inspect posture through the control-center APIs while the public site stays clean.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+
+            <section class="section final-cta" data-reveal>
+                <p class="eyebrow">Sentinel Relay</p>
+                <h2>When the chat surface is simple, the control plane should still be serious.</h2>
+                <p>
+                    Build WhatsApp workflows on a relay that remembers context, enforces boundaries,
+                    and leaves proof behind.
+                </p>
+                <div class="cta-row">
+                    <a class="button button-primary" href="#top">Back to top</a>
+                    <a class="button button-secondary" href="#workflow">Review the flow</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Sentinel Relay</p>
+            <p>The governed layer between WhatsApp conversations and agent execution.</p>
+        </footer>
+    </div>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
