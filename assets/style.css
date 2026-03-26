@@ -35,12 +35,21 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    background:
-        radial-gradient(1200px 420px at 10% 44rem, rgba(255, 122, 69, 0.08), transparent 64%),
-        radial-gradient(920px 520px at 90% 76rem, rgba(23, 132, 125, 0.08), transparent 68%),
-        linear-gradient(180deg, var(--hero) 0, var(--hero) 58rem, var(--paper) 62rem, #f8f4ec 100%);
+    background: #f8f4ec;
     font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
     text-rendering: optimizeLegibility;
+}
+
+.dark-surface {
+    padding-bottom: 3.5rem;
+    background:
+        radial-gradient(1200px 420px at 10% 80%, rgba(255, 122, 69, 0.08), transparent 64%),
+        radial-gradient(920px 520px at 90% 90%, rgba(23, 132, 125, 0.08), transparent 68%),
+        linear-gradient(180deg, var(--hero) 0, var(--hero) calc(100% - 3.5rem), var(--paper) 100%);
+}
+
+.light-surface {
+    background: linear-gradient(180deg, var(--paper) 0, #f8f4ec 8rem);
 }
 
 a {
@@ -900,11 +909,11 @@ body.is-ready .hero-visual,
 }
 
 @media (max-width: 1120px) {
-    body {
+    .dark-surface {
         background:
-            radial-gradient(760px 320px at 10% 36rem, rgba(255, 122, 69, 0.08), transparent 64%),
-            radial-gradient(640px 340px at 90% 70rem, rgba(23, 132, 125, 0.08), transparent 68%),
-            linear-gradient(180deg, var(--hero) 0, var(--hero) 60rem, var(--paper) 64rem, #f8f4ec 100%);
+            radial-gradient(760px 320px at 10% 80%, rgba(255, 122, 69, 0.08), transparent 64%),
+            radial-gradient(640px 340px at 90% 90%, rgba(23, 132, 125, 0.08), transparent 68%),
+            linear-gradient(180deg, var(--hero) 0, var(--hero) calc(100% - 3.5rem), var(--paper) 100%);
     }
 
     .hero {
@@ -934,9 +943,9 @@ body.is-ready .hero-visual,
         --page-width: min(100vw - 24px, 1180px);
     }
 
-    body {
+    .dark-surface {
         background:
-            linear-gradient(180deg, var(--hero) 0, var(--hero) 54rem, var(--paper) 58rem, #f8f4ec 100%);
+            linear-gradient(180deg, var(--hero) 0, var(--hero) calc(100% - 3.5rem), var(--paper) 100%);
     }
 
     .site-header {

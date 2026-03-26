@@ -33,19 +33,18 @@
 </head>
 <body>
     <div class="hero-shell">
-        <header class="site-header">
-            <a class="brand" href="#top" aria-label="Sentinel Relay home">
-                <span class="brand-mark" aria-hidden="true"></span>
-                <span class="brand-wordmark">Sentinel Relay</span>
-            </a>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="#modes">Modes</a>
-                <a href="#capabilities">Capabilities</a>
-                <a href="#workflow">Workflow</a>
-            </nav>
-        </header>
-
-        <main id="top">
+        <div class="dark-surface" id="top">
+            <header class="site-header">
+                <a class="brand" href="#top" aria-label="Sentinel Relay home">
+                    <span class="brand-mark" aria-hidden="true"></span>
+                    <span class="brand-wordmark">Sentinel Relay</span>
+                </a>
+                <nav class="site-nav" aria-label="Primary">
+                    <a href="#modes">Modes</a>
+                    <a href="#capabilities">Capabilities</a>
+                    <a href="#workflow">Workflow</a>
+                </nav>
+            </header>
             <section class="hero">
                 <div class="hero-copy">
                     <p class="eyebrow">Policy-first WhatsApp agent gateway</p>
@@ -104,7 +103,9 @@
                 <p>Background agent queue</p>
                 <p>Control center API</p>
             </section>
+        </div> <!-- End dark-surface -->
 
+        <main class="light-surface">
             <section class="section modes" id="modes" data-reveal>
                 <div class="section-heading">
                     <p class="eyebrow">Adapter surface</p>
