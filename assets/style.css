@@ -135,6 +135,30 @@ button,
     position: relative;
 }
 
+.site-nav .nav-cta {
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 122, 69, 0.34);
+    background: rgba(255, 122, 69, 0.14);
+    color: #ffe1d4;
+    box-shadow: 0 14px 28px rgba(255, 122, 69, 0.14);
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease,
+        color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.site-nav .nav-cta:hover,
+.site-nav .nav-cta:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(255, 122, 69, 0.52);
+    background: rgba(255, 122, 69, 0.22);
+    color: #fff0e9;
+    box-shadow: 0 18px 34px rgba(255, 122, 69, 0.2);
+}
+
 .site-nav a::after {
     content: "";
     position: absolute;
@@ -152,6 +176,10 @@ button,
 .site-nav a:focus-visible::after,
 .site-nav a.is-active::after {
     transform: scaleX(1);
+}
+
+.site-nav .nav-cta::after {
+    display: none;
 }
 
 .hero {
