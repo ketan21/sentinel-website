@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Relay | Request Access</title>
+    <meta name="description"
+        content="Register your interest in Sentinel Relay and tell us about your business, deployment needs, and WhatsApp workflow goals.">
+    <meta name="theme-color" content="#0b1419">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://interest.sentinelrelay.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sentinel Relay">
+    <meta property="og:title" content="Sentinel Relay | Request Access">
+    <meta property="og:description"
+        content="Tell us who you are, where you operate, and what you need from a governed WhatsApp automation layer.">
+    <meta property="og:url" content="https://interest.sentinelrelay.com/">
+    <meta property="og:image" content="https://sentinelrelay.com/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sentinel Relay | Request Access">
+    <meta name="twitter:description"
+        content="Share your business details and we will follow up with the right Sentinel Relay demo path.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/interest.css">
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="/" aria-label="Sentinel Relay home">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-wordmark">Sentinel Relay</span>
+            </a>
+            <a class="back-link" href="https://sentinelrelay.com/">Main site</a>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Private access intake</p>
+                    <h1>Request a Sentinel Relay walkthrough.</h1>
+                    <p class="lede">
+                        Share your business details, operating address, and workflow goals. We use this to tailor the
+                        right demo path instead of sending the same generic pitch to everyone.
+                    </p>
+                    <ul class="hero-points" aria-label="What happens next">
+                        <li>We review the business context behind the request.</li>
+                        <li>We decide whether to show the relay, control surface, or deployment flow first.</li>
+                        <li>We follow up with a relevant demo instead of a generic sales deck.</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="signal-stage">
+                        <div class="signal-grid"></div>
+                        <div class="signal-line signal-line-a"></div>
+                        <div class="signal-line signal-line-b"></div>
+                        <div class="signal-card signal-card-primary">
+                            <span class="signal-label">intake</span>
+                            <strong>business profile</strong>
+                        </div>
+                        <div class="signal-card signal-card-secondary">
+                            <span class="signal-label">routing</span>
+                            <strong>best-fit demo path</strong>
+                        </div>
+                        <div class="signal-card signal-card-tertiary">
+                            <span class="signal-label">follow-up</span>
+                            <strong>operator conversation</strong>
+                        </div>
+                        <div class="signal-orb"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-band">
+                <div class="proof-strip" data-reveal>
+                    <p>Governed WhatsApp automation</p>
+                    <p>Operator-first rollout</p>
+                    <p>Demo requests reviewed by context</p>
+                </div>
+
+                <div class="intake-layout">
+                    <section class="section-copy" data-reveal>
+                        <p class="section-kicker">What to include</p>
+                        <h2>Give us enough context to make the next conversation useful.</h2>
+                        <p>
+                            The more precise the request, the easier it is to decide whether you need a technical
+                            walkthrough, an operator demo, or a deployment discussion.
+                        </p>
+                        <dl class="detail-list">
+                            <div>
+                                <dt>Business identity</dt>
+                                <dd>Name, address, and email tell us who is evaluating the relay.</dd>
+                            </div>
+                            <div>
+                                <dt>Website or notes</dt>
+                                <dd>Share your business URL, or explain the workflow you want to automate.</dd>
+                            </div>
+                            <div>
+                                <dt>Comments</dt>
+                                <dd>Use the message field for use case detail, deployment constraints, or priorities.</dd>
+                            </div>
+                        </dl>
+                    </section>
+
+                    <section class="form-shell" data-reveal>
+                        <div class="form-head">
+                            <p class="section-kicker">Interest form</p>
+                            <h2>Request access</h2>
+                            <p id="form-status" class="form-status" role="status" aria-live="polite">
+                                Fill in the form and we will review it.
+                            </p>
+                        </div>
+
+                        <form id="interest-form" novalidate>
+                            <div class="field-grid">
+                                <label>
+                                    <span>Name</span>
+                                    <input id="name" name="name" type="text" autocomplete="name" required>
+                                </label>
+
+                                <label>
+                                    <span>Email</span>
+                                    <input id="email" name="email" type="email" autocomplete="email" required>
+                                </label>
+                            </div>
+
+                            <label>
+                                <span>Business address</span>
+                                <textarea id="address" name="address" rows="3" autocomplete="street-address"
+                                    required></textarea>
+                            </label>
+
+                            <label>
+                                <span>Business website</span>
+                                <input id="website" name="website" type="url" inputmode="url"
+                                    placeholder="https://example.com">
+                            </label>
+
+                            <label>
+                                <span>Comments or message</span>
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="What do you want to automate, what team is involved, and what stage are you at?"></textarea>
+                            </label>
+
+                            <p class="field-note">
+                                Provide either a business website or a useful message so we have enough context to
+                                respond well.
+                            </p>
+
+                            <button id="submit-button" class="submit-button" type="submit">
+                                Send request
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/assets/interest.js"></script>
+</body>
+
+</html>
